@@ -199,6 +199,8 @@ main h1 {
     height: 300px;
 }
 
+
+
 @keyframes flutuar {
     0% { transform: translateY(0); }
     50% { transform: translateY(-15px); }
@@ -210,16 +212,56 @@ main h1 {
     width: 550px;
     max-width: 100%;
 }
+@media (max-width: 1200px){
+section.banner,
+section.desenvolvimento,
+section.marketing,
+section.consultoria-ux,
+.contato,
+.introducao-sobre{
+        padding: 0 40px 40px;
+    }
+section h1, .container h1{
+    text-align: center;
+    }
+section.video-sobre iframe{
+    padding: 40px;
+    }
+}
 
 @media (max-width: 900px){
-    section.banner .container{
+    section.banner .container,
+    section.introducao-sobre .container .intro,
+    section.desenvolvimento .container,
+    section.marketing .container,
+    section.consultoria-ux .container,
+    .contato{
         flex-wrap: wrap;
+        justify-content: center;
     }
-    section.banner .container .texto{
+    section.banner .container .texto,
+    section.desenvolvimento .container .texto,
+    section.marketing .container .texto,
+    section.consultoria-ux .container .texto,
+    section h1,
+    .container h1{
         text-align: center;
     }
-    section.banner{
+    section.banner,
+    section.desenvolvimento,
+    section.marketing,
+    section.consultoria-ux,
+    .contato{
         padding: 0 40px 40px;
+    }
+
+    section.introducao-sobre{
+        padding: 0 40px;
+    }
+
+    section.video-sobre iframe{
+        height: 400px;
+        padding: 40px;
     }
 }
 
