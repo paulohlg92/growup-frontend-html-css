@@ -23,9 +23,7 @@ header {
 
 header .container {
     display: flex;
-    /* alinhamento horizontal */
     justify-content: space-between;
-    /* alinhamento vertical */
     align-items: center;
 }
 
@@ -62,12 +60,15 @@ header nav ul li a:hover{
     text-transform: uppercase;
     display: inline-block;
     text-decoration: none;
+    transition: all 0.5s;
+    box-shadow: 0px 5px 6px rgb(0 0 0 / 30%);
+    cursor: pointer;
 }
 
-.btn-primary:hover{
-    background-color: #00a592;
-    transition: all 0.4s ease;
+.btn-primary:hover {
+    background-color: #61b6ac;
 }
+
 
 main {
     min-height: 80vh;
