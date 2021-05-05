@@ -18,6 +18,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 header .container {
@@ -195,4 +196,14 @@ main h1 {
     max-width: 100%;
     width: 700px;
     height: 300px;
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+.img-destaque {
+    animation: flutuar 3s infinite;
 }
